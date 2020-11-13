@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:TextInvestigator"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Margin="10">
+        <TextBox TextWrapping="Wrap"
+                 MinHeight="200"
+                 Text="{Binding Path=TextToInvestigate}"
+                 VerticalScrollBarVisibility="Auto"
+                 Margin="0,0,0,10"
+                 AcceptsReturn="True" />
+
+        <Button Height="30">Investigate</Button>
+    </StackPanel>
 </Window>
